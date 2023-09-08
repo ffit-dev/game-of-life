@@ -1,0 +1,23 @@
+<!-- app/views/lifes/_lifes.html.erb -->
+
+<div class="lifes-container">
+  <table>
+    <tbody>
+    <% LifesHelper.lifes(10, 10).each do |row| %>
+      <tr>
+        <% row.each do |cell| %>
+          <% if cell == 1 %>
+            <td>
+              <div class="cell" style="background-color: black; width: 20px; height: 20px"></div>
+            </td>
+          <% else %>
+            <td>
+              <div class="cell" style="background-color: white; width: 20px; height: 20px"></div>
+            </td>
+          <% end %>
+        <% end %>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

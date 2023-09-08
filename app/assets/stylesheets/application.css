@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+    background: lightgray;
+    /*background: aliceblue;*/
+}
+
+.home-section {
+    width: 1200px;
+    background-color: #ffffff;
+    margin: 100px auto 0;
+    text-align: center;
+    border-radius: 4px;
+    padding: 24px 0;
+}
+
+.todo-form {
+    margin: 20px 0;
+}
+
+.todo-title {
+    margin-bottom: 4px;
+}
+
+.todo-description {
+    margin-bottom: 4px;
+}
+
+.todo-input {
+    width: 20%;
+    height: 40%;
+}

@@ -1,0 +1,13 @@
+<div class="home-section">
+  <h1>Game of Life!</h1>
+  <div>
+    <%#= turbo_frame_tag('create-todo') do %>
+    <%#= link_to 'todos/new' do %>
+    <!--        Create Todo-->
+    <%# end %>
+    <%# end %>
+    <%= turbo_frame_tag('life-cols') do %>
+      <%= render partial: 'lifes/board' %>
+    <% end %>
+  </div>
+</div>
